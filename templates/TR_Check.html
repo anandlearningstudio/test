@@ -1,5 +1,9 @@
 {% extends 'base.html' %}
 
+{% block tr_check %}
+<link rel="stylesheet" href="{{ url_for('static',filename='styles/TR_Check.css') }}">
+{% endblock %}
+
 {% block content %}
 <div class="container">
   <h4>Please check all the test(s) you want to perform: </h4>
