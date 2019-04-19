@@ -1,0 +1,16 @@
+body{
+  background-color: wheat;
+  color: blue;
+}
+h1{
+  text-align: center;
+}
+
+.display-4{
+  text-align: center;
+  text-emphasis: Absolute;
+}
+
+.jumbotron{
+  height: 555px;
+}

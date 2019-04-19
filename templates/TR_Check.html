@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+  <h4>Please check all the test(s) you want to perform: </h4>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+      <label class="form-check-label" for="defaultCheck1">
+        Schema Comparision With Constraints
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+      <label class="form-check-label" for="defaultCheck2">
+        Schema Comparision
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+      <label class="form-check-label" for="defaultCheck3">
+        Row Count Comparision
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+      <label class="form-check-label" for="defaultCheck4">
+        Data Comparision
+      </label>
+    </div>
+    <br>
+    <div class="form-check">
+      <label for="filepath">File:</label>
+      <input type="text" class="form-control" id="filepath" placeholder="Enter the file location to save the output ">
+    </div>
+  <h4>Please select the source: </h4>
+  <div class="source">
+    <select name="connection">
+      <option value="select" selected = "selected">Select</option>
+      <option value="hive">Hive</option>
+      <option value="jdbc">Database</option>
+      <option value="file">File</option>
+    </select>
+  </div>
+  <h4>Please select the Target: </h4>
+  <div class="target">
+    <select name="connection">
+      <option value="select" selected = "selected">Select</option>
+      <option value="hive">Hive</option>
+      <option value="jdbc">Database</option>
+      <option value="file">File</option>
+    </select>
+  </div>
+  <br>
+  <div class="form-group">
+    <label for="sparksubmit"><h3>Spark Submit Parameters: </h3></label>
+    <textarea class="form-control" id="sparksubmit" rows="3" placeholder="Please enter spark configurations in this area."></textarea>
+  </div>
+  <input class="btn btn-primary" type="submit" value="Submit">
+</div>
+{% endblock %}

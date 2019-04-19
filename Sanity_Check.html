@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tetra Framework</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="Sanity_Check.css">
+  </head>
+  <body>
+    <div class="container">
+      <h4>Please check all the test(s) you want to perform: </h4>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label" for="defaultCheck1">
+            Absolute Duplicate Check
+          </label>
+        </div>
+        <div class="form-check">
+          <label for="filepath">File Path for Absolute duplicate check:</label>
+          <input type="text" class="form-control" id="filepath" placeholder="Enter the file location to save the output ">
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+          <label class="form-check-label" for="defaultCheck2">
+            Duplicate Check
+          </label>
+        </div>
+        <div class="form-check">
+          <label for="duplicatecheckcolumn">Enter Column name to perform duplicate check:</label>
+          <input id = "duplicatecheckcolumn" type="text" name="duplicatecheckcolumn" placeholder="Column Name(s)">
+        </div>
+        <div class="form-check">
+          <label for="filepath">File Path for duplicate check:</label>
+          <input type="text" class="form-control" id="filepath" placeholder="Enter the file location to save the output ">
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+          <label class="form-check-label" for="defaultCheck3">
+            Absolute Null Check
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+          <label class="form-check-label" for="defaultCheck4">
+            Null Check
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+          <label class="form-check-label" for="defaultCheck5">
+            Alpha Numeric Check
+          </label>
+        </div>
+        <div class="form-check">
+          <label for="alnumcheckcolumn">Enter Column name to perform Alphanumeric check:</label>
+          <input id = "alnumcheckcolumn" type="text" name="alnumcheckcolumn" placeholder="Column Name(s)">
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
+          <label class="form-check-label" for="defaultCheck6">
+            Date Format Check
+          </label>
+        </div>
+        <div class="form-check">
+          <label for="dateformatcheckcolumn">Enter Column name to perform Date Format check:</label>
+          <input id = "dateformatcheckcolumn" type="text" name="dateformatcheckcolumn" placeholder="Column Name(s)">
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="sparksubmit"><h3>Spark Submit Parameters: </h3></label>
+          <textarea class="form-control" id="sparksubmit" rows="3" placeholder="Please enter spark configurations in this area."></textarea>
+        </div>
+        <input class="btn btn-primary" type="submit" value="Submit">
+      </div>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+.form-check{
+  margin-left: 20px;
+  padding-left: 20px;
+}
+.form-check .form-control{
+  width: 500px;
+}
+.container{
+  margin-top: 50px;
+  padding-top: 20px;
+}
+.form-group .form-control{
+  width: 800px;
+}

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+<br>
+<br>
+<h1>Welcome to the Data Ingestion Test Framework.</h1>
+<br>
+<br>
+<div class="container">
+  <div class="jumbotron text-left col-md-5" style="float:left">
+    <h3 class="display-4">Sanity Check</h3>
+    <p class="lead">This framework performs the basic sanity check on our Datasets. </p>
+    <p>Few of it's feature includes:-
+      <ul>
+        <li>Null Check</li>
+        <li>Absolute Null Check</li>
+      </ul>
+    </p>
+    <hr class="my-4">
+    <p>It leverages the feature of Spark and Python to perform multiple checks in much faster time.</p>
+    <a class="btn btn-primary btn-lg" href="{{ url_for('sanity_check') }}" role="button">Try it out.</a>
+  </div>
+  <div class="jumbotron text-left col-md-5" style="float:right">
+    <h3 class="display-4">Transformation Row Check</h3>
+    <p class="lead">This framework performs the Transformation Row check on our Datasets. </p>
+    <p>Few of it's feature includes:-
+      <ul>
+        <li>Row count</li>
+        <li>Difference of Datasets</li>
+      </ul>
+    </p>
+    <hr class="my-4">
+    <p>It leverages the feature of Spark and Python to perform multiple checks in much faster time.</p>
+    <a class="btn btn-primary btn-lg" href="{{ url_for('tr_check') }}" role="button">Try it out.</a>
+  </div>
+</div>
+{% endblock %}
